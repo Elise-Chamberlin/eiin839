@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\jean-yves\\.nuget\\packages\\": {},
+    "C:\\Users\\esile\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jean-yves\\Source\\Repos\\eiin839\\TP1\\Echo\\ChatServer\\EchoServer.csproj",
+      "projectUniqueName": "D:\\MesDossiers\\Documents\\Cours\\POLYTECH\\SEMESTRE8\\Soc_WB\\TD1\\eiin839\\TD1\\Echo\\ChatServer\\EchoServer.csproj",
       "projectName": "EchoServer",
-      "projectPath": "C:\\Users\\jean-yves\\Source\\Repos\\eiin839\\TP1\\Echo\\ChatServer\\EchoServer.csproj",
-      "packagesPath": "C:\\Users\\jean-yves\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jean-yves\\Source\\Repos\\eiin839\\TP1\\Echo\\ChatServer\\obj\\",
+      "projectPath": "D:\\MesDossiers\\Documents\\Cours\\POLYTECH\\SEMESTRE8\\Soc_WB\\TD1\\eiin839\\TD1\\Echo\\ChatServer\\EchoServer.csproj",
+      "packagesPath": "C:\\Users\\esile\\.nuget\\packages\\",
+      "outputPath": "D:\\MesDossiers\\Documents\\Cours\\POLYTECH\\SEMESTRE8\\Soc_WB\\TD1\\eiin839\\TD1\\Echo\\ChatServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\jean-yves\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\esile\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -60,12 +60,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.11, 3.1.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "D:\\Applications\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
