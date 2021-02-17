@@ -36,6 +36,7 @@ namespace Echo
 
     public class handleClient
     {
+        static string HTTP_ROOT = @"D:\MesDossiers\Documents\Cours\POLYTECH\SEMESTRE8\Soc_WB\TD1\eiin839\TD1\Echo\www\pub";
         TcpClient clientSocket;
         public void startClient(TcpClient inClientSocket)
         {
@@ -52,12 +53,23 @@ namespace Echo
             BinaryReader reader = new BinaryReader(stream);
             BinaryWriter writer = new BinaryWriter(stream);
 
+            string header = "http/1.0 200 OK\n\n";
+            string fichierHTML = File.ReadAllText(HTTP_ROOT + "\\index.html");
+
             while (true)
             {
 
                 string str = reader.ReadString();
-                Console.WriteLine(str);
-                writer.Write(str);
+                if (str.Equals("GET /index.html"))
+                {
+                    Console.Write("index OK");
+                    writer.Write(header + "\n" + fichierHTML);
+                }
+                else
+                {
+                    Console.WriteLine(str);
+                    writer.Write(str);
+                }
             }
         }
 
