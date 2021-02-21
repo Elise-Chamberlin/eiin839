@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "TrpyIgfHGhPcApLmTsFS3EC/K2qszIbrSJlqI8vWialrG2YoEYVXSI+Hka6IFjPZkt/TZIx564/XKNZoJd3j8Q==",
+  "success": true,
+  "projectFilePath": "D:\\MesDossiers\\Documents\\Cours\\POLYTECH\\SEMESTRE8\\Soc_WB\\TD1\\eiin839\\TD2\\myMethodExtern\\myMethodExtern.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\esile\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\esile\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\esile\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.11\\microsoft.netcore.app.host.win-x64.3.1.11.nupkg.sha512",
+    "C:\\Users\\esile\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

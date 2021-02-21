@@ -7,11 +7,16 @@ using System.Web;
 
 namespace BasicServerHTTPlistener
 {
+
+    // exemple d'url:
+    //localhost:8081/nice/evenements?param1=concert&para2=danse
+    //localhost:8081/listeUsers/user?param1=elise&para2=chamberlin
+    //localhost:8081/monCompte/monProfil/mesTrophees?param1=rare
     internal class Program
     {
         private static void Main(string[] args)
         {
-
+            MyMethods myMethods = new MyMethods();
             //if HttpListener is not supported by the Framework
             if (!HttpListener.IsSupported)
             {
@@ -86,10 +91,18 @@ namespace BasicServerHTTPlistener
                 //get path in url 
                 Console.WriteLine(request.Url.LocalPath);
 
+                string parameter = "";
                 // parse path in url 
                 foreach (string str in request.Url.Segments)
                 {
                     Console.WriteLine(str);
+                    parameter = str;
+                }
+
+                if(parameter == "myMethod")
+                {
+                    myMethods.myMethodExtern(HttpUtility.ParseQueryString(request.Url.Query).Get("param1"), HttpUtility.ParseQueryString(request.Url.Query).Get("param2"));
+                    //Console.WriteLine(myMethods.myMethod(HttpUtility.ParseQueryString(request.Url.Query).Get("param1"), HttpUtility.ParseQueryString(request.Url.Query).Get("param2")));
                 }
 
                 //get params un url. After ? and between &
