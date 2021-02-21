@@ -14,7 +14,7 @@ namespace BasicServerHTTPlistener
     //localhost:8081/monCompte/monProfil/mesTrophees/myMethod?param1=rare
     internal class Program
     {
-        public static void myMethod(string param1_value, string param2_value)
+        public static void myMethodExtern(string param1_value, string param2_value)
         {
             //
             // Set up the process with the ProcessStartInfo class.
@@ -130,7 +130,7 @@ namespace BasicServerHTTPlistener
 
                 if (parameter == "myMethod")
                 {
-                    myMethod(HttpUtility.ParseQueryString(request.Url.Query).Get("param1"), HttpUtility.ParseQueryString(request.Url.Query).Get("param2"));
+                    myMethodExtern(HttpUtility.ParseQueryString(request.Url.Query).Get("param1"), HttpUtility.ParseQueryString(request.Url.Query).Get("param2"));
                 }
 
                 //get params un url. After ? and between &
